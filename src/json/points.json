@@ -1,0 +1,36 @@
+{
+  "marks": {
+    "five": 25,
+    "four": 10,
+    "three": 15
+  },
+  "sheets": {
+    "level":[
+      {
+        "colorName": "зеленом",
+        "colorCode": "#5eff00",
+        "cost": 6
+      },
+      {
+        "colorName": "персиковом",
+        "colorCode": "#f0c859",
+        "cost": 8
+      },
+      {
+        "colorName": "розовом",
+        "colorCode": "#ff00ff",
+        "cost": 16
+      },
+      {
+        "colorName": "желтом",
+        "colorCode": "#ffff00",
+        "cost": 18
+      },
+      {
+        "colorName": "оранжевом",
+        "colorCode": "#ffa600",
+        "cost": 70
+      }
+    ]
+  }
+}
