@@ -1,6 +1,6 @@
 export interface IBalance {
   id?: string,
   minutes: number,
-  poinst: number,
+  points: number,
   date: string
 }

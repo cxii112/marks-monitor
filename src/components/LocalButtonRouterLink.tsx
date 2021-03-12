@@ -6,7 +6,7 @@ interface IActionLink {
   id: string,
   callback?: Function,
 }
-export const LocalButtonLink = (props: IActionLink) => {
+export const LocalButtonRouterLink = (props: IActionLink) => {
   const CLASSES = 'button' + ' ' + props.addClasses;
 
   return (

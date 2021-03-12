@@ -23,7 +23,7 @@ export const Stats = () => {
           <ul>
             {data.map((item, idx) => (
               <li style={{ order: idx }} key={idx}>
-                {item.date}: {item.minutes.toFixed(2)}, {item.poinst}
+                {item.date}: {item.minutes.toFixed(2)}, {item.points}
               </li>
             ))}
           </ul>
