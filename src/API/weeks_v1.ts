@@ -4,7 +4,7 @@ import { IBalance } from "../interfaces/Balance";
 const HOST = 'https://marks-mon.herokuapp.com'
 const PREFIX = 'api/weeks/v1'
 
-export default {
+const API = {
   get: function () {
     return axios.get(
       `${HOST}/${PREFIX}/get/`,
@@ -28,4 +28,6 @@ export default {
       }
     )
   }
-}
+};
+
+export default API;

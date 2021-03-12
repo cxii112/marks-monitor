@@ -1,5 +1,5 @@
 import './css/App.css'
-import React, {
+import {
   useState,
   useEffect
 } from "react";
@@ -8,9 +8,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { toggleClassById } from "./scripts/toggleClassById";
-import { removeClassById } from "./scripts/removeClassById";
-import { createIonIcon } from "./scripts/createIonIcon";
 import { NavSideBar } from "./components/NavSideBar";
 import { Stats } from "./components/Stats";
 import { Spend } from "./components/Spend";
@@ -18,8 +15,6 @@ import { Earn } from "./components/Earn";
 import { IBalance } from "./interfaces/Balance";
 import WEEKS_API from "./API/weeks_v1";
 import Categories from "./json/categories.json";
-import { LocalButtonRouterLink } from './components/LocalButtonRouterLink';
-import { ActionButton } from './components/ActionButton';
 import { Bar } from './components/Bar';
 import { HeroFH } from './components/HeroFH';
 
