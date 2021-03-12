@@ -16,7 +16,7 @@ export const HeroFH = (props:{minutes: number, points: number}) => {
             {createIonIcon('time-outline')}{props.minutes} {createIonIcon('star-outline')}{props.points}
           </div>
           <div className='subtitle'>
-            <a className='button is-text' href='#Stats'>
+            <a className='button is-text is-primary is-inverted' href='#Stats'>
               {createIonIcon('arrow-down-outline')}
             </a>
           </div>
