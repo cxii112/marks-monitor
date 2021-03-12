@@ -27,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "git push origin deploy ; gh-pages -d build"
+    "deploy": "git push origin deploy && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
