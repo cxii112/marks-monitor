@@ -1,1 +1,14 @@
-/* No CSS */
+.Spend {
+  height: 100vh;
+}
+
+.Spend .container {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100%;
+}
+
+.Spend .box {
+  height: inherit;
+}

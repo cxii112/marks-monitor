@@ -7,8 +7,8 @@ export const Spend = () => {
   const COMPONENT_NAME = 'Spend';
   return (
     <div className={COMPONENT_NAME}>
-      <div className='container'>
-        <div className='content'>
+      <div className='container p-3'>
+        <div className='content box'>
           <h1>Как тратить баллы</h1>
           <p>Для начала обговорим основные ограничения.</p>
           <ul>

@@ -72,3 +72,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+#root {
+  background: -webkit-linear-gradient(120deg, #00c3ff, #00d1b2, #1cff1c);
+  background: -o-linear-gradient(120deg, #00c3ff, #00d1b2, #1cff1c);
+  background: linear-gradient(-30deg, #00c3ff, #00d1b2, #1cff1c);
+}

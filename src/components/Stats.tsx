@@ -17,8 +17,8 @@ export const Stats = () => {
 
   return (
     <div className={COMPONENT_NAME}>
-      <div className='container'>
-        <div className='content'>
+      <div className='container p-3'>
+        <div className='content box'>
           <h1>Статистика</h1>
           <ul>
             {data.map((item, idx) => (

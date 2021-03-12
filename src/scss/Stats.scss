@@ -1,3 +1,10 @@
 .Stats{
   height: 100vh;
+  .container {
+    min-height: fit-content;
+    height: 100%;
+  };
+  .box {
+    height: inherit;
+  }
 }

@@ -14,8 +14,8 @@ export const Earn = () => {
   let i = 0;
   return (
     <div className={COMPONENT_NAME}>
-      <div className='container'>
-        <div className='content'>
+      <div className='container p-3'>
+        <div className='content box'>
           <h1>Как получать баллы</h1>
           <ul className=''>
             <li key={i++}>

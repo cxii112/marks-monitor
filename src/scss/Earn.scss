@@ -1,0 +1,10 @@
+.Earn{
+  height: 100vh;
+  .container {
+    height: fit-content;
+    min-height: 100%;
+  };
+  .box {
+    height: inherit;
+  }
+}
