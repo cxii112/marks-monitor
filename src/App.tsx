@@ -52,12 +52,12 @@ export default function App() {
               switch (cat.name) {
                 case 'main':
                   result = (
-                    <>
+                    <div id='wrapper'>
                       <HeroFH minutes={minutes} points={points} />
                       <section>
                         <Stats />
                       </section>
-                    </>
+                    </div>
                   );
                   break;
                 case 'earn':
@@ -74,9 +74,9 @@ export default function App() {
               }
               return (
                 <Route path={cat.link} key={idx}>
-                  <div>
+                  <>
                     {result}
-                  </div>
+                  </>
                 </Route>
               )
             })}

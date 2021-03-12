@@ -1,4 +1,5 @@
 import { createIonIcon } from "../scripts/createIonIcon"
+import { ActionButtonLink } from "./ActionButtonLink"
 
 export const HeroFH = (props:{minutes: number, points: number}) => {
   return (
@@ -15,7 +16,9 @@ export const HeroFH = (props:{minutes: number, points: number}) => {
             {createIonIcon('time-outline')}{props.minutes} {createIonIcon('star-outline')}{props.points}
           </div>
           <div className='subtitle'>
-            {createIonIcon('arrow-down-outline')}
+            <a className='button is-text' href='#Stats'>
+              {createIonIcon('arrow-down-outline')}
+            </a>
           </div>
         </div>
       </div>
