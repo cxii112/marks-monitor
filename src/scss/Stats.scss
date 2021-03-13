@@ -11,14 +11,17 @@
     height: inherit;
   }
 }
-.history {
+.scrollable {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 50;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  
   ul {
     margin: 0;
   }
 }
-.history-item {
+.scrollable-item {
   position: relative;
 }
