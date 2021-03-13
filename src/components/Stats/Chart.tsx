@@ -1,5 +1,5 @@
-import { ChartConfiguration, ChartDataSets, ChartOptions, ChartType } from "chart.js";
-import { Bar, ChartComponentProps, ChartData, defaults } from "react-chartjs-2";
+import { ChartDataSets, ChartOptions } from "chart.js";
+import { Bar, ChartData } from "react-chartjs-2";
 import { IBalance } from "../../interfaces/Balance";
 import { translateDate } from "../../scripts/translateDate";
 
@@ -20,7 +20,8 @@ export const Chart = (props: { data: IBalance[] }) => {
       labels: {
         fontSize: 20
       }
-    }
+    },
+    devicePixelRatio: 4
   }
   const MINUTES_DATASET: ChartDataSets = {
     label: 'Минуты',

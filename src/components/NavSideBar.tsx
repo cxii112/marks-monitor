@@ -13,7 +13,7 @@ export const NavSideBar = () => {
         {CATEGORIES.list.map(
           (cat: { name: string, title: string, link: string }, idx: number) => (
             <div key={idx}>
-              <Link to={cat.link}
+              <Link to={`/marks-monitor${cat.link}`}
                 id={cat.name}
                 key={idx}
                 className='LocalTitleLink'

@@ -1,7 +1,8 @@
 import './css/App.css'
 import {
   useState,
-  useEffect
+  useEffect,
+  createContext
 } from "react";
 import {
   BrowserRouter as BR,
@@ -17,6 +18,7 @@ import WEEKS_API from "./API/weeks_v1";
 import Categories from "./json/categories.json";
 import { Bar } from './components/Bar';
 import { HeroFH } from './components/HeroFH';
+import { PointsDataCtx } from './context/PointsDataCtx';
 
 
 export default function App() {
@@ -42,7 +44,8 @@ export default function App() {
 
   return (
     <div className={COMPONENT_NAME}>
-      <BR>
+
+      <PointsDataCtx.Provider value={balance}>
         <Bar />
         <NavSideBar />
         <Switch>
@@ -81,7 +84,7 @@ export default function App() {
               )
             })}
         </Switch>
-      </BR>
+      </PointsDataCtx.Provider>
     </div>
   )
 }

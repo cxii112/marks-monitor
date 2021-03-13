@@ -1,5 +1,4 @@
-import { createIonIcon } from "../scripts/createIonIcon"
-import { ActionButtonLink } from "./ActionButtonLink"
+import { createIonIcon } from "../scripts/createIonIcon";
 
 export const HeroFH = (props:{minutes: number, points: number}) => {
   return (
