@@ -6,6 +6,7 @@ import {
 import { IBalance } from "../../interfaces/Balance";
 import { Chart } from "./Chart";
 import API from '../../API/weeks_v1'
+import { translateDate } from '../../scripts/translateDate';
 
 export const Stats = () => {
   const COMPONENT_NAME = 'Stats'
@@ -25,7 +26,7 @@ export const Stats = () => {
           <ul>
             {data.map((item, idx) => (
               <li style={{ order: idx }} key={idx}>
-                {item.date}: {item.minutes.toFixed(2)}, {item.points}
+                {translateDate(item.date)}: {item.minutes.toFixed(2)}, {item.points}
               </li>
             ))}
           </ul>
