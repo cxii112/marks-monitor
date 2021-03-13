@@ -9,7 +9,7 @@ import {
   Route
 } from "react-router-dom";
 import { NavSideBar } from "./components/NavSideBar";
-import { Stats } from "./components/Stats";
+import { Stats } from "./components/Stats/Stats";
 import { Spend } from "./components/Spend";
 import { Earn } from "./components/Earn";
 import { IBalance } from "./interfaces/Balance";
