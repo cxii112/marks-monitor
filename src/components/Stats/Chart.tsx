@@ -23,7 +23,7 @@ export const Chart = (props: { data: IBalance[] }) => {
   }
   const MINUTES_DATASET: ChartDataSets = {
     label: 'Минуты',
-    data: props.data.map(item => item.minutes),
+    data: props.data.map(item => Number(item.minutes.toFixed(2))),
     backgroundColor: props.data.map(i => '#1cff1c88')
   }
   const POINTS_DATASET: ChartDataSets = {
