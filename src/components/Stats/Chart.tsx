@@ -14,7 +14,12 @@ export const Chart = (props: { data: IBalance[] }) => {
     },
     tooltips: { enabled: true },
     responsive: true,
-    maintainAspectRatio: false
+    maintainAspectRatio: false,
+    legend: {
+      labels: {
+        fontSize: 20
+      }
+    }
   }
   const MINUTES_DATASET: ChartDataSets = {
     label: 'Минуты',
