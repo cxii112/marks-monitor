@@ -23,13 +23,13 @@ export const Stats = () => {
         <div className='content box'>
           <h1>Статистика</h1>
           <Chart data={data} />
-          <ul>
-            {data.map((item, idx) => (
-              <li style={{ order: idx }} key={idx}>
-                {translateDate(item.date)}: {item.minutes.toFixed(2)}, {item.points}
-              </li>
-            ))}
-          </ul>
+          <div className="hictory">
+              {data.map((item, idx) => (
+                <div className='history-item' style={{ order: idx }} key={idx}>
+                  {translateDate(item.date)}: {item.minutes.toFixed(2)}, {item.points}
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </div>

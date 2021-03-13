@@ -1,14 +1,26 @@
 .Stats {
   height: 100vh;
+  overflow: hidden;
 }
 
 .Stats .container {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
   height: 100%;
 }
 
 .Stats .box {
   height: inherit;
+}
+
+.history {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 50;
+}
+
+.history ul {
+  margin: 0;
+}
+
+.history-item {
+  position: relative;
 }
