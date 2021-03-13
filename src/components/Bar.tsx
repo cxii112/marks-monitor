@@ -11,7 +11,7 @@ export const Bar = () => {
       <div className='level-item'>
         <LocalButtonRouterLink
           id='go-home'
-          to=''
+          to='/marks-monitor/'
           callback={() => removeClassById('NavSideBar', 'active')}
           content={createIonIcon('home-outline')}
           addClasses='is-primary is-inverted' />
