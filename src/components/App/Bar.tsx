@@ -1,9 +1,9 @@
 import React from "react"
-import { createIonIcon } from "../scripts/createIonIcon"
-import { removeClassById } from "../scripts/removeClassById"
-import { toggleClassById } from "../scripts/toggleClassById"
-import { ActionButton } from "./ActionButton"
-import { LocalButtonRouterLink } from "./LocalButtonRouterLink"
+import { createIonIcon } from "../../scripts/createIonIcon"
+import { removeClassById } from "../../scripts/removeClassById"
+import { toggleClassById } from "../../scripts/toggleClassById"
+import { ActionButton } from "../ActionButton"
+import { LocalButtonRouterLink } from "../LocalButtonRouterLink"
 
 export const Bar = () => {
   return (<div id='bar' className='level is-mobile mb-0'>

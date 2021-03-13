@@ -1,6 +1,8 @@
 .Stats{
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex: 0 0 auto;
   .container {
     // min-height: fit-content;
     height: 100%;

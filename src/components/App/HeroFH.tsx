@@ -1,4 +1,4 @@
-import { createIonIcon } from "../scripts/createIonIcon";
+import { createIonIcon } from "../../scripts/createIonIcon";
 
 export const HeroFH = (props:{minutes: number, points: number}) => {
   return (

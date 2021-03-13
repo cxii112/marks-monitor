@@ -1,24 +1,22 @@
-import './css/App.css'
+import '../../css/App.css'
 import {
   useState,
   useEffect,
-  createContext
 } from "react";
 import {
-  BrowserRouter as BR,
   Switch,
   Route
 } from "react-router-dom";
-import { NavSideBar } from "./components/NavSideBar";
-import { Stats } from "./components/Stats/Stats";
-import { Spend } from "./components/Spend";
-import { Earn } from "./components/Earn";
-import { IBalance } from "./interfaces/Balance";
-import WEEKS_API from "./API/weeks_v1";
-import Categories from "./json/categories.json";
-import { Bar } from './components/Bar';
-import { HeroFH } from './components/HeroFH';
-import { PointsDataCtx } from './context/PointsDataCtx';
+import { NavSideBar } from "../NavSideBar";
+import { Stats } from "../Stats/Stats";
+import { Spend } from "../Spend";
+import { Earn } from "../Earn";
+import { IBalance } from "../../interfaces/Balance";
+import WEEKS_API from "../../API/weeks_v1";
+import Categories from "../../json/categories.json";
+import { Bar } from './Bar';
+import { HeroFH } from './HeroFH';
+import { PointsDataCtx } from '../../context/PointsDataCtx';
 
 
 export default function App() {
@@ -76,7 +74,7 @@ export default function App() {
                   break;
               }
               return (
-                <Route path={cat.link} key={idx}>
+                <Route path={`/marks-monitor${cat.link}`} key={idx}>
                   <>
                     {result}
                   </>
