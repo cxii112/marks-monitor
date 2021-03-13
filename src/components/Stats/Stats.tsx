@@ -1,14 +1,10 @@
 import '../../css/Stats.css'
 import {
-  useState,
-  useEffect,
   useContext
 } from "react";
-import { IBalance } from "../../interfaces/Balance";
 import { Chart } from "./Chart";
-import API from '../../API/weeks_v1'
-import { translateDate } from '../../scripts/translateDate';
 import { PointsDataCtx } from '../../context/PointsDataCtx';
+import { WeeklyHistory } from './WeeklyHistory';
 
 export const Stats = () => {
   const COMPONENT_NAME = 'Stats'
@@ -20,13 +16,7 @@ export const Stats = () => {
         <div className='content box'>
           <h1>Статистика</h1>
           <Chart data={points} />
-          <div className="hictory">
-              {points.map((item, idx) => (
-                <div className='history-item' style={{ order: idx }} key={idx}>
-                  {translateDate(item.date)}: {item.minutes.toFixed(2)}, {item.points}
-                </div>
-              ))}
-          </div>
+          <WeeklyHistory data={points} />
         </div>
       </div>
     </div>
