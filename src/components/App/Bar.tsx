@@ -14,7 +14,7 @@ export const Bar = () => {
           to='/marks-monitor/'
           callback={() => removeClassById('NavSideBar', 'active')}
           content={createIonIcon('home-outline')}
-          addClasses='is-primary is-inverted' />
+          addClasses='is-secondary is-inverted' />
       </div>
     </div>
     <div className='level-right is-pulled-right'>
@@ -23,7 +23,7 @@ export const Bar = () => {
           id='NavSideBar-open'
           callback={() => toggleClassById('NavSideBar', 'active')}
           content={createIonIcon('menu-outline')}
-          addClasses='is-primary is-inverted' />
+          addClasses='is-secondary is-inverted' />
       </div>
     </div>
   </div>)

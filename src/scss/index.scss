@@ -1,4 +1,5 @@
 @import 'zero';
+@import 'colors';
 
 body {
   margin: 0;
@@ -16,7 +17,7 @@ code {
 }
 
 #root {
-  background: linear-gradient(-30deg,#00c3ff, #00d1b2 ,#1cff1c);
+  background: linear-gradient(-30deg, $colorBasicBlue, $colorBasicTeal, $colorBasicGreen);
 }
 
 @import 'generate_from_bulma';
