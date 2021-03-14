@@ -4,7 +4,7 @@ import { IBalance } from "../../interfaces/Balance";
 import { translateDate } from "../../scripts/translateDate";
 
 
-export const Chart = (props: { data: IBalance[] }) => {
+export const Chart = (props: { data: IBalance[], redraw?: boolean }) => {
   const CHART_OPTIONS: ChartOptions = {
     scales: {
       yAxes: [{
@@ -34,7 +34,17 @@ export const Chart = (props: { data: IBalance[] }) => {
     backgroundColor: props.data.map(i => '#00c3ff88')
   }
   const CHART_DATA: ChartData<any> = {
-    labels: props.data.map(item => translateDate(item.date)),
+    labels: props.data.map((item, idx) => {
+      if (props.data.length > 12) {
+        if (idx == 0 || idx == props.data.length - 1) {
+          return translateDate(item.date);
+        } else {
+          return '';
+        }
+      } else {
+        return translateDate(item.date);
+      }
+    }),
     datasets: [MINUTES_DATASET, POINTS_DATASET]
   }
   return (
@@ -43,6 +53,7 @@ export const Chart = (props: { data: IBalance[] }) => {
         data={CHART_DATA}
         options={CHART_OPTIONS}
         height={0.4 * window.innerHeight}
+        redraw={props.redraw}
       />
     </div>
   )
