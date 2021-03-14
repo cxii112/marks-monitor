@@ -71,7 +71,7 @@ export const Stats = () => {
 
   return (
     <div className={COMPONENT_NAME} id={COMPONENT_NAME}>
-      <div className='container p-3'>
+      <div className='container p-3 py-6'>
         <div className='content box'>
           <h1>Статистика</h1>
           {content}
