@@ -25,5 +25,7 @@ export const translateDate = (dateStr: string) => {
       return `${date[1]} Ноя ${date[3]}`
     case 'Dec':
       return `${date[1]} Дек ${date[3]}`
+    default:
+      return '';
   }
 }

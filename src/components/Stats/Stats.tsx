@@ -1,6 +1,5 @@
 import '../../css/Stats.css'
-import React, {
-  createRef,
+import {
   useContext, useEffect, useState
 } from "react";
 import { Chart } from "./Chart";
@@ -8,12 +7,29 @@ import { PointsDataCtx } from '../../context/PointsDataCtx';
 import { Loader } from '../Loader';
 import { Range, RangeProps } from "rc-slider";
 import '../../css/slider.css';
+import { IBalance } from '../../interfaces/Balance';
+import { translateDate } from '../../scripts/translateDate';
 
 export const Stats = () => {
   const COMPONENT_NAME = 'Stats'
-  const points = useContext(PointsDataCtx);
+  const points = useContext<{data: IBalance[], loaded: boolean}>(PointsDataCtx);
   const [content, setContent] = useState(<Loader width='100%' height='100%' />);
-  const [bounds, setBounds] = useState<{ left: number, right: number}>({left: 0, right: 0});
+  const [bounds, setBounds] = useState<{ left: number, right: number }>(() => {
+    let left;
+    let right;
+    if (points.loaded) {
+      right = points.data.length - 1;
+      if (right - 7 > 0) {
+        left = right - 7;
+      } else {
+        left = 0;
+      }
+    } else {
+      left = 0;
+      right = 4;
+    }
+    return { left: left, right: right };
+  });
 
   const handleInput = (value: Array<number>) => {
     setBounds({ left: value[0], right: value[1] });
@@ -22,9 +38,9 @@ export const Stats = () => {
     min: 0,
     max: points.data.length - 1,
     step: 1,
-    defaultValue: [points.data.length - 1 - 7, points.data.length - 1],
+    value: [bounds.left, bounds.right],
     count: 1,
-    pushable: 4,
+    pushable: 3,
     draggableTrack: true,
     onChange: handleInput,
     dots: points.data.length < 13,
@@ -39,20 +55,16 @@ export const Stats = () => {
         left = 0;
       }
       setBounds({ left: left, right: right });
-      setContent(
-        <>
-          <Chart data={points.data.slice(left, right + 1)} redraw={true}/>
-          <Range {...RP} />
-          </>
-      );
     }
   }, [points]);
 
   useEffect(() => {
     setContent(
       <>
-        <Chart data={points.data.slice(bounds.left, bounds.right + 1)} redraw={true} />
-        <Range {...RP} />
+        <Chart data={points.data.slice(bounds.left, bounds.right + 1)} />
+        <div className='mt-3'>
+          <Range {...RP} />
+        </div>
       </>
     )
   }, [bounds]);
