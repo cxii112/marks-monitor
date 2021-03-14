@@ -44,7 +44,7 @@ export const Spend = () => {
           <p className='example notification is-light'>
             После расчета было {createIonIcon('star-outline')}2000 баллов и 45 минут. {createIonIcon('star-outline')}1000 ты потратил, а остальное решил оставить. Получается у тебя теперь {createIonIcon('star-outline')}1000 баллов и 45 минут.
           </p>
-          <p >Самое важное помнить, что минуты копятся <span className='has-background-warning'>отдельно</span> от баллов за листочки, а тратиться - <span className='has-background-warning'>вместе</span>. Например:</p>
+          <p >Самое важное помнить, что минуты копятся <span className='tag is-warning'>отдельно</span> от баллов за листочки, а тратиться - <span className='tag is-warning'>вместе</span>. Например:</p>
           <p className='example notification is-light'>
             После расчета было {createIonIcon('star-outline')}450 баллов и 80 минут. {createIonIcon('star-outline')}500 ты потратил, а остальное решил оставить. Получается у тебя теперь {createIonIcon('star-outline')}0 баллов и 30 минут.
           </p>

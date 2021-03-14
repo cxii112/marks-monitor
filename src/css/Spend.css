@@ -12,3 +12,7 @@
 .Spend .box {
   height: inherit;
 }
+
+.Spend ul {
+  margin-left: 0;
+}

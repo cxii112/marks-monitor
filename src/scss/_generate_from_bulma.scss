@@ -1,4 +1,34 @@
-@import '../../node_modules/bulma/sass/utilities/initial-variables.sass';
 
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+@import '../../node_modules/bulma/sass/utilities/functions.sass';// 2. Setup your Custom Colors
 
+// $radius-custom-small: 8px;
+// $radius-custom: 10px;
+// $radius-custom-large: 13px;
+
+// $radius-small: $radius-custom-small;
+// $radius: $radius-custom;
+// $radius-large: $radius-custom-large;
+
+$task-level-1: #5eff00;
+$task-level-1-invert: findColorInvert($task-level-1);
+$task-level-2: #f0c859;
+$task-level-2-invert: findColorInvert($task-level-2);
+$task-level-3: #ff00ff;
+$task-level-3-invert: findColorInvert($task-level-3);
+$task-level-4: #ffff00;
+$task-level-4-invert: findColorInvert($task-level-4);
+$task-level-5: #ffa600;
+$task-level-5-invert: findColorInvert($task-level-5);
+$family-primary: $family-sans-serif;
+
+// 3. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+$addColors: (
+  "task-level-1":($task-level-1, $task-level-1-invert),
+  "task-level-2":($task-level-2, $task-level-2-invert),
+  "task-level-3":($task-level-3, $task-level-3-invert),
+  "task-level-4":($task-level-4, $task-level-4-invert),
+  "task-level-5":($task-level-5, $task-level-5-invert),
+);$colors: map-merge($colors, $addColors);
 @import '../../node_modules/bulma/bulma.sass';

@@ -43,15 +43,10 @@ export const Earn = () => {
           </p>
           <ul>
             {SHEETS_POINTS.level.map((
-              item: { colorName: string, colorCode: string, cost: number },
-              number: number) => {
+              item: { colorName: string, cost: number },
+              idx: number) => {
               return <>
-                <li key={i++}>Примеры на <span style={
-                  {
-                    backgroundColor: item.colorCode,
-                    padding: '0.1rem',
-                    borderRadius: '5px'
-                  }}>
+                <li key={idx}>Примеры на <span className={`tag is-task-level-${idx + 1}`} style={{fontSize: '0.9rem'}}>
                   {item.colorName}
                 </span> листке стоят {createIonIcon('star-outline')}{item.cost} баллов.</li>
               </>
