@@ -4,7 +4,6 @@ import {
 } from "react";
 import { Chart } from "./Chart";
 import { PointsDataCtx } from '../../context/PointsDataCtx';
-import { WeeklyHistory } from './WeeklyHistory';
 
 export const Stats = () => {
   const COMPONENT_NAME = 'Stats'
