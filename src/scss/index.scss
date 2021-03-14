@@ -17,7 +17,7 @@ code {
 }
 
 #root {
-  background: linear-gradient(-30deg, $colorBasicBlue, $colorBasicTeal, $colorBasicGreen);
+  background: linear-gradient(-30deg, $colorBasicBlue, $colorBasicTeal, $colorBasicTeal, $colorBasicGreen);
 }
 
 @import 'generate_from_bulma';
