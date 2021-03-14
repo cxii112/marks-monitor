@@ -15233,3 +15233,8 @@ a.has-text-accent:hover, a.has-text-accent:focus {
 #wrapper section {
   scroll-snap-align: center;
 }
+
+#hero-box {
+  width: 75vw;
+  min-height: 50vh;
+}

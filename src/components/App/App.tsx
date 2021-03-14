@@ -17,18 +17,23 @@ import Categories from "../../json/categories.json";
 import { Bar } from './Bar';
 import { HeroFH } from './HeroFH';
 import { PointsDataCtx } from '../../context/PointsDataCtx';
+import { Loader } from '../Loader';
 
 
 export default function App() {
   const COMPONENT_NAME = 'App';
   const CATEGORIES = JSON.parse(JSON.stringify(Categories));
+  const [isDataLoaded, setIsDataLoaded] = useState<boolean>(false);
   const [balance, setBalance] = useState<IBalance[]>([]);
   const [minutes, setMinutes] = useState<number>(0);
   const [points, setPoints] = useState<number>(0);
 
   useEffect(() => {
     WEEKS_API.get()
-      .then(response => setBalance(response.data.payload))
+      .then(response => {
+        setBalance(response.data.payload);
+        setIsDataLoaded(true);
+      })
       .catch(err => console.error(err));
   }, []);
 
@@ -42,8 +47,7 @@ export default function App() {
 
   return (
     <div className={COMPONENT_NAME}>
-
-      <PointsDataCtx.Provider value={balance}>
+      <PointsDataCtx.Provider value={{data: balance, loaded: isDataLoaded}}>
         <Bar />
         <NavSideBar />
         <Switch>
@@ -54,7 +58,7 @@ export default function App() {
                 case 'main':
                   result = (
                     <div id='wrapper'>
-                      <HeroFH minutes={minutes} points={points} />
+                      <HeroFH minutes={minutes!} points={points!} />
                       <section>
                         <Stats />
                       </section>
