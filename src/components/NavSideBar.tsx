@@ -10,8 +10,8 @@ export const NavSideBar = () => {
 
   return (
     <div id={COMPONENT_NAME} className={COMPONENT_NAME}>
-      <div className='box py-6 is-flex is-flex-direction-column-reverse'>
-        <div className=''>
+      <div className='box is-flex is-flex-direction-column-reverse'>
+        <div className='pb-6 mb-6'>
           {CATEGORIES.list.map(
             (cat: { name: string, title: string, link: string }, idx: number) => (
               <div key={idx} className={`ml-0 mr-0`}>
