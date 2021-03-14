@@ -11,7 +11,7 @@
 // $radius: $radius-custom;
 // $radius-large: $radius-custom-large;
 $primary: $colorBasicGreen;
-$secondary: $colorBasicBlue;
+$secondary_invert: findColorInvert($colorBasicBlue);
 $colorTaskLevel_1_invert: findColorInvert($colorTaskLevel_1);
 $colorTaskLevel_2_invert: findColorInvert($colorTaskLevel_2);
 $colorTaskLevel_3_invert: findColorInvert($colorTaskLevel_3);
@@ -29,5 +29,6 @@ $addColors: (
   "task-level-4":($colorTaskLevel_4, $colorTaskLevel_4_invert),
   "task-level-5":($colorTaskLevel_5, $colorTaskLevel_5_invert),
   "accent": ($colorBasicTeal, $colorBasicTeal_invert),
+  "secondary": ($colorBasicBlue, $secondary_invert),
 );$colors: map-merge($colors, $addColors);
 @import '../../node_modules/bulma/bulma.sass';
