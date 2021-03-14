@@ -16,7 +16,6 @@ export const Stats = () => {
         <div className='content box'>
           <h1>Статистика</h1>
           <Chart data={points} />
-          <WeeklyHistory data={points} />
         </div>
       </div>
     </div>
