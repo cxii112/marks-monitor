@@ -3,8 +3,9 @@ import '../css/Rules.css';
 import Points from '../json/points.json'
 import { createIonIcon } from "../scripts/createIonIcon";
 
-export const Earn = () => {
-  const COMPONENT_NAME = 'Earn';
+export const COMPONENT_NAME = 'Earn';
+
+export default function Spend() {
   const MARKS_POINTS = JSON.parse(JSON.stringify(Points)).marks;
   const SHEETS_POINTS = JSON.parse(JSON.stringify(Points)).sheets;
   const ADD = '+';

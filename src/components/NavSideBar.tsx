@@ -3,10 +3,11 @@ import Categories from '../json/categories.json';
 import { toggleClassById } from "../scripts/toggleClassById";
 import { Link } from "react-router-dom";
 
-export const NavSideBar = () => {
+export const COMPONENT_NAME = 'NavSideBar';
+
+export default function NavSideBar() {
   const CATEGORIES = JSON.parse(JSON.stringify(Categories));
-  const COMPONENT_NAME = 'NavSideBar';
-  const handleMain = (str: string) => { if (str == 'main') return 'tag is-secondary pt-1'}
+  const handleMain = (str: string) => { if (str === 'main') return 'tag is-secondary pt-1'}
 
   return (
     <div id={COMPONENT_NAME} className={COMPONENT_NAME}>

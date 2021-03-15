@@ -36,7 +36,7 @@ export const Chart = (props: { data: IBalance[], redraw?: boolean }) => {
   const CHART_DATA: ChartData<any> = {
     labels: props.data.map((item, idx) => {
       if (props.data.length > 12) {
-        if (idx == 0 || idx == props.data.length - 1) {
+        if (idx === 0 || idx === props.data.length - 1) {
           return translateDate(item.date);
         } else {
           return '';

@@ -8,10 +8,11 @@ import { Loader } from '../Loader';
 import { Range, RangeProps } from "rc-slider";
 import '../../css/slider.css';
 import { IBalance } from '../../interfaces/Balance';
-import { translateDate } from '../../scripts/translateDate';
 
-export const Stats = () => {
-  const COMPONENT_NAME = 'Stats'
+export const COMPONENT_NAME = 'Stats'
+
+export default function Stats() {
+
   const points = useContext<{data: IBalance[], loaded: boolean}>(PointsDataCtx);
   const [content, setContent] = useState(<Loader width='100%' height='100%' />);
   const [bounds, setBounds] = useState<{ left: number, right: number }>(() => {

@@ -3,8 +3,9 @@ import '../css/Spend.css';
 import '../css/Rules.css';
 import { createIonIcon } from '../scripts/createIonIcon';
 
-export const Spend = () => {
-  const COMPONENT_NAME = 'Spend';
+export const COMPONENT_NAME = 'Spend';
+
+export default function Spend() {
   return (
     <div className={COMPONENT_NAME}>
       <div className='container p-3 py-6'>

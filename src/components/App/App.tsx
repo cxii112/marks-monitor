@@ -7,21 +7,20 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import { NavSideBar } from "../NavSideBar";
-import { Stats } from "../Stats/Stats";
-import { Spend } from "../Spend";
-import { Earn } from "../Earn";
+import NavSideBar from "../NavSideBar";
+import Stats from "../Stats/Stats";
+import Spend from "../Spend";
+import Earn from "../Earn";
 import { IBalance } from "../../interfaces/Balance";
 import WEEKS_API from "../../API/weeks_v1";
 import Categories from "../../json/categories.json";
 import { Bar } from './Bar';
 import { HeroFH } from './HeroFH';
 import { PointsDataCtx } from '../../context/PointsDataCtx';
-import { Loader } from '../Loader';
 
+export const COMPONENT_NAME = 'App';
 
 export default function App() {
-  const COMPONENT_NAME = 'App';
   const CATEGORIES = JSON.parse(JSON.stringify(Categories));
   const [isDataLoaded, setIsDataLoaded] = useState<boolean>(false);
   const [balance, setBalance] = useState<IBalance[]>([]);
@@ -29,7 +28,6 @@ export default function App() {
   const [points, setPoints] = useState<number>(0);
 
   useEffect(() => {
-    document.body.requestFullscreen();
     WEEKS_API.get()
       .then(response => {
         setBalance(response.data.payload);
