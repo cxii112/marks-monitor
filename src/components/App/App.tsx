@@ -29,6 +29,7 @@ export default function App() {
   const [points, setPoints] = useState<number>(0);
 
   useEffect(() => {
+    document.body.requestFullscreen();
     WEEKS_API.get()
       .then(response => {
         setBalance(response.data.payload);
