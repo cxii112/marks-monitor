@@ -45,6 +45,7 @@ export default function Stats() {
     draggableTrack: true,
     onChange: handleInput,
     dots: points.data.length < 13,
+    disabled:(points.data.length < 4 && points.loaded)
   };
   useEffect(() => {
     if (points.loaded) {
