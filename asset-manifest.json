@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/marks-monitor/static/css/main.eb384334.chunk.css",
-    "main.js": "/marks-monitor/static/js/main.bb879bfb.chunk.js",
-    "main.js.map": "/marks-monitor/static/js/main.bb879bfb.chunk.js.map",
+    "main.js": "/marks-monitor/static/js/main.92da542a.chunk.js",
+    "main.js.map": "/marks-monitor/static/js/main.92da542a.chunk.js.map",
     "runtime-main.js": "/marks-monitor/static/js/runtime-main.e0f3b371.js",
     "runtime-main.js.map": "/marks-monitor/static/js/runtime-main.e0f3b371.js.map",
     "static/js/2.46051e0e.chunk.js": "/marks-monitor/static/js/2.46051e0e.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.e0f3b371.js",
     "static/js/2.46051e0e.chunk.js",
     "static/css/main.eb384334.chunk.css",
-    "static/js/main.bb879bfb.chunk.js"
+    "static/js/main.92da542a.chunk.js"
   ]
 }
