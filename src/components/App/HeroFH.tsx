@@ -12,7 +12,7 @@ export const HeroFH = (props: { minutes: number, points: number }) => {
         <div className='subtitle'>
           Текущий баланс
           </div>
-          <div className='counter' style={{fontSize: `${38 * (1 / (String(props.minutes + props.points).length / 3))}vw`}}>
+          <div className='counter' style={{fontSize: `${38 * (1 / (String(props.minutes + props.points).length / 3))}vmin`}}>
             {props.minutes + props.points}
           </div>
           <div className='subtitle'>
