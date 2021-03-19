@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/marks-monitor/static/css/main.699921ae.chunk.css",
-    "main.js": "/marks-monitor/static/js/main.fc01bc8f.chunk.js",
-    "main.js.map": "/marks-monitor/static/js/main.fc01bc8f.chunk.js.map",
+    "main.css": "/marks-monitor/static/css/main.eb384334.chunk.css",
+    "main.js": "/marks-monitor/static/js/main.b5ee4faa.chunk.js",
+    "main.js.map": "/marks-monitor/static/js/main.b5ee4faa.chunk.js.map",
     "runtime-main.js": "/marks-monitor/static/js/runtime-main.e0f3b371.js",
     "runtime-main.js.map": "/marks-monitor/static/js/runtime-main.e0f3b371.js.map",
     "static/js/2.46051e0e.chunk.js": "/marks-monitor/static/js/2.46051e0e.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.9d92c634.chunk.js": "/marks-monitor/static/js/3.9d92c634.chunk.js",
     "static/js/3.9d92c634.chunk.js.map": "/marks-monitor/static/js/3.9d92c634.chunk.js.map",
     "index.html": "/marks-monitor/index.html",
-    "static/css/main.699921ae.chunk.css.map": "/marks-monitor/static/css/main.699921ae.chunk.css.map",
+    "static/css/main.eb384334.chunk.css.map": "/marks-monitor/static/css/main.eb384334.chunk.css.map",
     "static/js/2.46051e0e.chunk.js.LICENSE.txt": "/marks-monitor/static/js/2.46051e0e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e0f3b371.js",
     "static/js/2.46051e0e.chunk.js",
-    "static/css/main.699921ae.chunk.css",
-    "static/js/main.fc01bc8f.chunk.js"
+    "static/css/main.eb384334.chunk.css",
+    "static/js/main.b5ee4faa.chunk.js"
   ]
 }
