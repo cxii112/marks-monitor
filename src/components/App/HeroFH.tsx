@@ -29,7 +29,7 @@ export const HeroFH = (props: { minutes: number, points: number }) => {
   return (
     <section className='hero is-fullheight'>
       <div className='hero-body is-flex-direction-column is-justify-content-center'>
-        <div id='hero-box' className='box'>
+        <div id='hero-box' className='box is-flex is-flex-direction-column is-justify-content-space-between'>
           {content}
         </div>
       </div>
