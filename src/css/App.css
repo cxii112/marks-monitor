@@ -15611,7 +15611,7 @@ a.has-text-secondary:hover, a.has-text-secondary:focus {
 
 .counter {
   display: block;
-  font-size: 38vw;
+  font-family: 'Consolas', monospace;
 }
 
 #wrapper section {
